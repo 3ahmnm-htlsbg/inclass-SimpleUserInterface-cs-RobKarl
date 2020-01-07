@@ -9,9 +9,18 @@ public class InterfaceScript : MonoBehaviour
     public Button textButton;
     public Text result;
 
+    public Text counterText;
+    public int counter = 0;
+
 
     public void CopyText()
     {
         result.text = input.text;
+    }
+
+    public void CountUp()
+    {
+        counter++;
+        counterText.text = counter.ToString();
     }
 }
