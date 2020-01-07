@@ -1,18 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class InterfaceScript : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+{  
+    public InputField input;
+    public Button textButton;
+    public Text result;
 
-    // Update is called once per frame
-    void Update()
+
+    public void CopyText()
     {
-        
+        result.text = input.text;
     }
 }
